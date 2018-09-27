@@ -1,0 +1,9 @@
+<%= simple_form_for @car do |f| %>
+  <%= f.input :placa %>
+  <%= f.input :color %>
+  <%= f.input :estado %>
+  <%= f.button :submit %>
+<% end %>
+
+
+<%= link_to "Ver todos", cars_path %>

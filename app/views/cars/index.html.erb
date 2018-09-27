@@ -1,0 +1,22 @@
+<table>
+  <tr>
+    <td>Placa</td>
+    <td>Color</td>
+    <td>Accion</td>
+  </tr>
+
+  <% @cars.each do |car| %>
+    <tr>
+      <td>
+        <%= link_to car.placa, car_path(car) %>
+      </td>
+      <td><%= car.color %></td>
+      <td><%= link_to "EDITAR", edit_car_path(car) %> </td>
+    </tr>
+
+  <% end %>
+
+</table>
+
+
+<%= link_to "Nuevo carro", new_car_path %>

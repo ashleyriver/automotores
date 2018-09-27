@@ -1,0 +1,21 @@
+<table>
+  <tr>
+    <td><b>Placa</b></td>
+    <td><%= @car.placa %></td>
+  </tr>
+
+  <tr>
+    <td><b>Color</b></td>
+    <td><%= @car.color %></td>
+
+  </tr>
+
+  <tr>
+      <td><b>Estado</b></td>
+      <td> <%= @car.estado %></td>
+  </tr>
+</table>
+
+<%= link_to "Crear nuevo", new_car_path %>
+
+<%= link_to "Ver todos", cars_path %>
